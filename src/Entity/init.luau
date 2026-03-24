@@ -1,0 +1,38 @@
+local Analyzer = require("./Analyzer");
+local entity = {};
+
+function entity.Replace(character: Model): (boolean, string?)
+    local humanoid = character:FindFirstChild("Humanoid");
+
+    if humanoid and humanoid:IsA("Humanoid") then
+        local description = humanoid:FindFirstChild("HumanoidDescription");
+
+        if description and description:IsA("HumanoidDescription") then
+            local query = Analyzer.Query(tostring(description.Head));
+
+            if query then
+                description.Head = 0;
+                humanoid:ApplyDescriptionAsync(description);
+                
+                local head = character:FindFirstChild("Head");
+
+                if head and head:IsA("Part") then
+                    local mesh = Instance.new("SpecialMesh");
+                    mesh.MeshType = Enum.MeshType.Head;
+                    mesh.Scale = Vector3.new(1.25, 1.25, 1.25);
+                    mesh.Parent = head;
+
+                    local decal = head:FindFirstChild("face") :: Decal? or Instance.new("Decal");
+                    decal.Texture = `rbxassetid://{query.Decal}`;
+                    decal.Parent = head;
+
+                    return true;
+                end
+            end
+        end
+    end
+
+    return false;
+end
+
+return entity;

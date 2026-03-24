@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "build": "wally install && rojo build --output out/fdh.rbxm"
+    }
+}
