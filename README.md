@@ -9,3 +9,17 @@ npm run build
 ```
 
 For more help, check out [the Rojo documentation](https://rojo.space/docs).
+
+## Analyzer
+
+Analyzer has one function: Query, and it allows you to search for the database for conversion.
+```luau
+Analyzer.Query(id: string): data | nil
+```
+
+## Entity
+
+Entity has one function: Replace, and it handles replacing the character's head for you if it is found on the database. If it is successful, it'll return true.
+```luau
+Enitity.Replace(character: Model): (boolean, string?)
+```
