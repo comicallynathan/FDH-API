@@ -11,7 +11,7 @@ npm run build
 For more help, check out [the Rojo documentation](https://rojo.space/docs).
 
 # Overview
-R6 is supported, but R15 is not supported for now.
+This package allows us to work dynamically by indexing [the catalogue](https://github.com/comicallynathan/ScrewDynamicHeads) on Git as opposed to static models while suffering under Roblox's tyranny. R6 is supported, but R15 is not supported for now.
 
 ## Analyzer
 
