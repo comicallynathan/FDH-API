@@ -24,7 +24,7 @@ Analyzer.Query(id: string): data | nil
 
 Entity has one function: Replace, and it handles replacing the character's head for you if it is found on the database. If it is successful, it'll return true.
 ```luau
-Enitity.Replace(character: Model): (boolean, string?)
+Entity.Replace(character: Model): (boolean, string?)
 ```
 
 # Collaborator
