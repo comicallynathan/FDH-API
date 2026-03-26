@@ -1,6 +1,12 @@
 {
   "name": "FDH-API",
   "tree": {
-    "$path": "src"
+    "$path": "src",
+    "R15": {
+      "$className": "Folder",
+      "Head": {
+        "$path": "Objects/R15/Head.rbxm"
+      }
+    }
   }
 }
