@@ -29,7 +29,7 @@ Entity.Replace(character: Model): (boolean, string?)
 
 # Collaborator
 
-Become a collaborator, and help us achieve creative freedom! __We need support for R15.__
+Become a collaborator, and help us achieve creative freedom! ~~We need support for R15.~~ R15 is supported since 1.1.0.
 
 Help us index face onto the catalogue. [The Catalogue](https://github.com/comicallynathan/ScrewDynamicHeads).
 Zero knowledge in coding require, just basic structure. Just fork it, create a pull request, and we'll be on our way.
