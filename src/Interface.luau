@@ -18,8 +18,6 @@ function interface.Start()
     end);
 end
 
-
-
 if RunService:IsClient() then
     warn("[FDH]: Roblox removed FilteringDisabled five years ago, so it's recommended that you actually run this thing on a real server. Thanks!");
 else
